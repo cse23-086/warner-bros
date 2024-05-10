@@ -7,7 +7,7 @@
         body {
             background-color: #8B0000;
             margin: 0;
-            color: white; 
+            color: white;
         }
 
         /* Styling for the navigation bar */
@@ -80,6 +80,16 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Flexbox for horizontal arrangement */
+        article {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling if needed */
+        }
+
+        figure {
+            margin-right: 10px; /* Adjust spacing between figures */
+        }
     </style>
 </head>
 
@@ -116,39 +126,31 @@
             <h2>Popular Movies</h2>
             <article>
                 <figure>
-                    <img src="sandman-dream-poster-header.avif" alt="sandman-dream-poster-header.avif" class="sandman-dream-poster-header.avif" width="300px" height="350px">
+                    <img src="placeholder1.jpg" alt="Movie 1" class="movie-thumbnail" width="300px" height="350px">
                 </figure>
                 <figure>
-                    <img src="the Batman1.jpg" alt="the Batman1.jpg" class="the Batman1.jpg" width="300px" height="350px">
-                </figure>
-              <figure>
-                    <img src="Riverdale.jpg" alt="the Riverdale.jpg" class="Riverdale.jpg" width="300px" height="350px">
-                </figure>
-               <figure>
-                    <img src="children of corn.jpeg" alt="children of corn.jpeg" class="children of corn.jpeg" width="300px" height="350px">
-                </figure>
-                  <figure>
-                    <img src="last of us.jpeg" alt="last of us.jpeg" class="last of us.jpeg" width="300px" height="350px">
-                </figure>
-                  <figure>
-                    <img src="plane.jpeg" alt="plane.jpeg" class="plane.jpeg" width="300px" height="350px">
-                </figure>
-                  <figure>
-                    <img src="khandar.jpeg" alt="khandar.jpeg" class="khandar.jpeg" width="300px" height="350px">
+                    <img src="placeholder2.jpg" alt="Movie 2" class="movie-thumbnail" width="300px" height="350px">
                 </figure>
                 <figure>
-                    <img src="Smallville.jpg" alt="Smallville.jpg" class="Smallville.jpg" width="300px" height="350px">
+                    <img src="placeholder3.jpg" alt="Movie 3" class="movie-thumbnail" width="300px" height="350px">
                 </figure>
-                    <figure>
-                    <img src="Oppenh.jpeg" alt="Oppenh.jpeg" class="Oppenh.jpeg" width="300px" height="350px">
-                </figure>
-                 
-                
-
+                <!-- Add more figures for additional movies as needed -->
             </article>
         </section>
 
-        <!-- Other content can be added here using sections and articles -->
+        <!-- Section for popular TV shows -->
+        <section id="tv-shows-section">
+            <h2>Popular TV Shows</h2>
+            <article>
+                <figure>
+                    <img src="placeholder4.jpg" alt="TV Show 1" class="tv-show-thumbnail" width="300px" height="350px">
+                </figure>
+                <figure>
+                    <img src="placeholder5.jpg" alt="TV Show 2" class="tv-show-thumbnail" width="300px" height="350px">
+                </figure>
+                <!-- Add more figures for additional TV shows as needed -->
+            </article>
+        </section>
     </main>
 
     <!-- Footer section -->
