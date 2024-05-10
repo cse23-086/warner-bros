@@ -1,73 +1,144 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Warner Bros Website</title>
     <style>
+        /* Set the background color of the body to deep blood red */
+        body {
+            background-color: #8B0000;
+            margin: 0;
+            color: white; /* Set default text color to white */
+        }
+
         /* Styling for the navigation bar */
         nav {
             background-color: #333;
             overflow: hidden;
             display: flex;
-            justify-content: space-between; /* Use flexbox to justify the content */
+            justify-content: space-between;
             align-items: center;
             padding: 10px;
         }
-        
+
         /* Styling for the links in the navigation bar */
         nav a {
             color: white;
             text-decoration: none;
             padding: 14px 16px;
         }
-        
+
         nav a:hover {
             background-color: #575757;
         }
-        
+
         /* Styling for the search form */
         #search-form {
-            margin: 0; /* Removes default margin */
+            margin: 0;
         }
 
         #search-form input {
             padding: 6px;
-            margin-right: 10px; /* Adds margin to the right of the search box */
+            margin-right: 10px;
         }
-        
+
         /* Container to hold search and authentication links */
         .nav-container {
             display: flex;
             align-items: center;
         }
+
+        /* Movie thumbnail styling */
+        .movie-thumbnail {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        /* Media queries for responsive images */
+        @media (max-width: 768px) {
+            .movie-thumbnail {
+                width: 150px;
+                height: 225px;
+            }
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
+
 <body>
 
-<nav>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="movies.html">Movies</a>
-        <a href="#">TV Shows</a>
-        <a href="#">Games & Apps</a>
-        <a href="#">Collections</a>
-        <a href="#">Feedback</a>
-    </div>
-    
-    <!-- Container for the search form and authentication links -->
-    <div class="nav-container">
-        <!-- Search bar -->
-        <form id="search-form">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </form>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Games & Apps</a>
+            <a href="#">Collections</a>
+            <a href="#">Feedback</a>
+        </div>
 
-        <!-- Sign-in and Log-in links -->
-        <a href="#">Sign In</a>
-        <a href="#">Log In</a>
-    </div>
-</nav>
+        <!-- Container for the search form and authentication links -->
+        <div class="nav-container">
+            <!-- Search bar -->
+            <form id="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
 
-<!-- Main content of the website goes here -->
+            <!-- Sign-in and Log-in links -->
+            <a href="#">Sign In</a>
+            <a href="#">Log In</a>
+        </div>
+    </nav>
+
+    <!-- Main content of the website -->
+    <main>
+        <!-- Section for popular movies -->
+        <section id="movies-section">
+            <h2>Popular Movies</h2>
+            <article>
+                <figure>
+                    <img src="path_to_your_movie_poster.jpg" alt="Movie Poster" class="movie-thumbnail">
+                </figure>
+                <figure>
+                    <img src="path_to_your_movie_poster_2.jpg" alt="Movie Poster" class="movie-thumbnail">
+                </figure>
+                <!-- Add more movie posters here -->
+            </article>
+        </section>
+
+        <!-- Other content can be added here using sections and articles -->
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Warner Bros. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </p>
+    </footer>
 
 </body>
+
 </html>
