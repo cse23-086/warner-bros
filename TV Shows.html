@@ -3,133 +3,103 @@
 <head>
     <title>TV Shows</title>
     <style>
-    <style>
-       
-      body {
-    background-color: #8B0000;
-    margin: 0;
-    color: red;
-}
+        body {
+            background-color: #8B0000; /* Red background color */
+            margin: 0;
+            color: red;
+        }
 
-/* Styling for the navigation bar */
-nav {
-    background-color:#8B0000;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #000000;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
 
-/* Styling for the links in the navigation bar */
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 16px;
-}
+        /* Styling for the links in the navigation bar */
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
 
-nav a:hover {
-    background-color: #575757;
-}
+        nav a:hover {
+            background-color: #575757;
+        }
 
-/* Styling for the search form */
-#search-form {
-    margin: 0;
-}
+        /* Styling for the search form */
+        #search-form {
+            margin: 0;
+        }
 
-#search-form input {
-    padding: 6px;
-    margin-right: 10px;
-}
+        #search-form input {
+            padding: 6px;
+            margin-right: 10px;
+        }
 
-/* Container to hold search and authentication links */
-.nav-container {
-    display: flex;
-    align-items: center;
-}
+        /* Container to hold search and authentication links */
+        .nav-container {
+            display: flex;
+            align-items: center;
+        }
 
-/* Movie thumbnail styling */
-.movie-thumbnail {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    margin: 10px;
-}
+        /* Movie thumbnail styling */
+        .movie-thumbnail {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            margin: 10px;
+        }
 
-/* Media queries for responsive images */
-@media (max-width: 768px) {
-    .movie-thumbnail {
-        width: 150px;
-        height: 225px;
-    }
-}
+        /* Media queries for responsive images */
+        @media (max-width: 768px) {
+            .movie-thumbnail {
+                width: 150px;
+                height: 225px;
+            }
+        }
 
-/* Footer styling */
-footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
+        /* Feedback form styling */
+        #feedback-form {
+            background-color: #8B0000; /* Red background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px auto; /* Center the form */
+        }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
+        #feedback-form h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
 
-footer a:hover {
-    text-decoration: underline;
-}
+        #feedback-form input[type="text"],
+        #feedback-form input[type="email"],
+        #feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-/* Flexbox for horizontal arrangement */
-article {
-    display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
-}
+        #feedback-form input[type="submit"] {
+            background-color: #333; /* Dark red button */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
 
-figure {
-    margin-right: 10px; /* Adjust spacing between figures */
-}
-
-/* Feedback form styling */
-#feedback-form {
-    background-color: #8B0000; /* Red background color */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 20px auto; /* Center the form */
-}
-
-#feedback-form h2 {
-    color: white;
-    margin-bottom: 20px;
-}
-
-#feedback-form input[type="text"],
-#feedback-form input[type="email"],
-#feedback-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#feedback-form input[type="submit"] {
-    background-color: #333; /* Dark red button */
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-
-#feedback-form input[type="submit"]:hover {
-    background-color: #575757; /* Dark red button on hover */
-}
+        #feedback-form input[type="submit"]:hover {
+            background-color: #575757; /* Dark red button on hover */
+        }
     </style>
 </head>
 <body>
@@ -150,6 +120,7 @@ figure {
             <input type="text" placeholder="Search...">
             <button type="submit">Search</button>
         </form>
+    </div>
 </nav>
 	
 <section id="movies-section">
