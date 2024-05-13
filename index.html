@@ -7,10 +7,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <style>
     body {
-        background-color: #8B0000; /* Updated background color */
         margin: 0;
         color: white;
-        padding-bottom: 50px; /* Adjust padding to accommodate footer height */
     }
 
     /* Styling for the navigation bar */
@@ -93,9 +91,39 @@
         width: 100%;
         height: 100%;
     }
+
+    /* Styling for the video background */
+    #video-background {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+    }
+
+    /* Content overlay */
+    #content-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
   </style>
 </head>
 <body>
+
+<video autoplay muted loop id="video-background">
+  <source src="your-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <nav>
     <ul>
@@ -122,7 +150,6 @@
 </nav>
 
 <div id="demo" class="carousel slide" data-ride="carousel">
-
     <!-- Indicators -->
     <ul class="carousel-indicators">
         <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -155,7 +182,7 @@
 <section id="movies-section">
     <h2>Popular Movies</h2>
    <article>
-         <figure>
+       <figure>
              <img src="dune ii.webp" alt="dune ii" class="movie-thumbnail" width="300px" height="350px">
         </figure>
         <figure>
