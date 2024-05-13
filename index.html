@@ -17,13 +17,87 @@
             height: 100%;
             z-index: -1; /* Place behind other content */
             object-fit: cover; /* Ensure video covers entire area */
-          
+        }
+
         #Movies-section {
             position: relative; /* Ensure content is positioned correctly */
+        }
+
+        #Movies-section article {
+            display: flex; /* Use flexbox layout */
+            flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+            justify-content: space-around; /* Arrange items evenly horizontally */
+            padding: 20px; /* Add padding for spacing */
+        }
+
+        .movie-thumbnail {
+            max-width: 200px; /* Adjust maximum width of each movie thumbnail */
+            margin-bottom: 20px; /* Add margin below each movie thumbnail */
+        }
+
+        nav {
+            display: flex; /* Use flexbox layout */
+            justify-content: space-between; /* Space items evenly horizontally */
+            align-items: center; /* Align items vertically */
+            background-color: #333; /* Background color for the navigation bar */
+            padding: 10px 20px; /* Add padding */
+        }
+
+        nav a {
+            color: white; /* Text color for navigation links */
+            text-decoration: none; /* Remove underline from links */
+            margin: 0 10px; /* Add margin between links */
+        }
+
+        nav form {
+            display: flex; /* Use flexbox layout */
+        }
+
+        nav input[type="text"] {
+            padding: 5px; /* Add padding */
+            margin-right: 5px; /* Add margin */
+        }
+
+        nav button {
+            padding: 5px 10px; /* Add padding */
+            background-color: #555; /* Background color for the button */
+            color: white; /* Text color for the button */
+            border: none; /* Remove border */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        .login-signup a {
+            color: white; /* Text color for login/signup links */
+            text-decoration: none; /* Remove underline from links */
+            margin-left: 10px; /* Add margin */
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="TV Shows.html">TV Shows</a>
+            <a href="games&apps.html">Games & Apps</a>
+            <a href="collection.html">Collections</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="Cartoons.html">Cartoons</a>
+        </div>
+
+        <!-- Search bar -->
+        <form id="search-form">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Login and Sign up -->
+        <div class="login-signup">
+            <a href="login.html">Log In</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </nav>
+
     <video class="movie-background" autoplay muted loop>
         <source src="Paramount Pictures Logo (2020) [4K " type="video/mp4"> 
          <source src="The Batman - 30 Second TV Spot (Fa" type="video/mp4">
@@ -34,7 +108,6 @@
     <section id="Movies-section">
         <h2>Popular Movies</h2>
         <article>
-            <!-- Your movie thumbnails here -->
            <figure>
             <img src="dune ii.webp" alt="dune ii" class="movie-thumbnail" width="300px" height="350px">
         </figure>
@@ -50,8 +123,7 @@
         <figure>
             <img src="joker.webp" alt="joker.webp" class="joker.webp" width="300px" height="350px">
         </figure>
-
-            <!-- Add more figures for additional movies as needed -->
+            
         </article>
     </section>
 </body>
