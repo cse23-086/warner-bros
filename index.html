@@ -8,9 +8,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<style>
+    <style>
         body {
             background-color: #8B0000;
+        }
+
+        /* Adjusting the size of the background images */
+        .carousel-item img {
+            max-width: 600px; /* Set maximum width */
+            max-height: 400px; /* Set maximum height */
+            width: auto;
+            height: auto;
         }
     </style>
 </head>
@@ -70,9 +78,9 @@
 
 <section id="movies-section">
     <h2>Popular Movies</h2>
-     <article>
-      <figure>
-             <img src="dune ii.webp" alt="dune ii" class="movie-thumbnail" width="300px" height="350px">
+    <article>
+        <figure>
+            <img src="dune ii.webp" alt="dune ii" class="movie-thumbnail" width="300px" height="350px">
         </figure>
         <figure>
             <img src="children of corn.jpeg" alt="children of corn" class="movie-thumbnail" width="300px" height="350px">
@@ -93,7 +101,7 @@
 <section id="TV Shows-section">
     <h2>Popular TV Shows</h2>
     <article>
-       <figure>
+        <figure>
             <img src="RIVERDALE 2.jpg" alt="RIVERDALE 2.jpg" class="RIVERDALE 2.jpg" width="300px" height="350px">
         </figure>
         <figure>
@@ -111,13 +119,14 @@
         <figure>
             <img src="Arrow.jpg" alt="Arrow.jpg" class="Arrow.jpg" width="300px" height="350px">
         </figure>
-
+    </article>
 </section>
 
 <section id="Cartoons-section">
     <h2>Popular Cartoons</h2>
     <article>
-          <img src="Johnny test.jpg" alt="Johnny test" width="300px" height="350px">
+        <figure>
+            <img src="Johnny test.jpg" alt="Johnny test" width="300px" height="350px">
         </figure>
         <figure>
             <img src="Justice league.jpg" alt="Justice league" class="Justice league" width="300px" height="350px">
@@ -136,7 +145,6 @@
         </figure>
         <!-- Add more figures for additional cartoons as needed -->
     </article>
-
 </section>
 
 <script>
