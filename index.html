@@ -20,27 +20,26 @@
         }
 
         #Movies-section {
-            position: relative; /* Ensure content is positioned correctly */
-        }
-
-        #Movies-section article {
-            display: flex; /* Use flexbox layout */
-            flex-wrap: wrap; /* Allow items to wrap to next line if needed */
-            justify-content: space-around; /* Arrange items evenly horizontally */
+            margin-top: 80px; /* Add space above the content */
             padding: 20px; /* Add padding for spacing */
         }
 
-        .movie-thumbnail {
-            max-width: 200px; /* Adjust maximum width of each movie thumbnail */
-            margin-bottom: 20px; /* Add margin below each movie thumbnail */
+        #navigation {
+            position: fixed; /* Fix navigation bar position */
+            top: 0; /* Place at the top of the page */
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure navigation bar is above other content */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px 20px; /* Add padding */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
         }
 
         nav {
             display: flex; /* Use flexbox layout */
             justify-content: space-between; /* Space items evenly horizontally */
             align-items: center; /* Align items vertically */
-            background-color: #333; /* Background color for the navigation bar */
-            padding: 10px 20px; /* Add padding */
+            width: 100%;
         }
 
         nav a {
@@ -71,10 +70,28 @@
             text-decoration: none; /* Remove underline from links */
             margin-left: 10px; /* Add margin */
         }
+
+        #Movies-section article {
+            display: flex; /* Use flexbox layout */
+            flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+            justify-content: space-around; /* Arrange items evenly horizontally */
+        }
+
+        .movie-thumbnail {
+            max-width: 200px; /* Adjust maximum width of each movie thumbnail */
+            margin-bottom: 20px; /* Add margin below each movie thumbnail */
+        }
     </style>
 </head>
 <body>
-    <nav>
+    <video class="movie-background" autoplay muted loop>
+        <source src="Paramount Pictures Logo (2020) [4K " type="video/mp4"> 
+         <source src="The Batman - 30 Second TV Spot (Fa" type="video/mp4">
+         <source src="THE BATMAN – Main Trailer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <nav id="navigation">
         <div>
             <a href="index.html">Home</a>
             <a href="movies.html">Movies</a>
@@ -98,17 +115,10 @@
         </div>
     </nav>
 
-    <video class="movie-background" autoplay muted loop>
-        <source src="Paramount Pictures Logo (2020) [4K " type="video/mp4"> 
-         <source src="The Batman - 30 Second TV Spot (Fa" type="video/mp4">
-         <source src="THE BATMAN – Main Trailer.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
     <section id="Movies-section">
         <h2>Popular Movies</h2>
         <article>
-           <figure>
+            <figure>
             <img src="dune ii.webp" alt="dune ii" class="movie-thumbnail" width="300px" height="350px">
         </figure>
         <figure>
@@ -123,7 +133,35 @@
         <figure>
             <img src="joker.webp" alt="joker.webp" class="joker.webp" width="300px" height="350px">
         </figure>
-            
+        <!-- Add more figures for additional movies as needed -->
+    </article>
+</section>
+
+<section id="TV Shows-section">
+    <h2>Popular TV Shows</h2>
+    <article>
+        <figure>
+            <img src="RIVERDALE 2.jpg" alt="RIVERDALE 2.jpg" class="RIVERDALE 2.jpg" width="300px" height="350px">
+        </figure>
+        <figure>
+            <img src="last of us.jpeg" alt="last of us.jpeg" class="last of us.jpeg" width="300px" height="350px">
+        </figure>
+        <figure>
+            <img src="Smallville.jpg" alt="Smallville.jpg" class="Smallville.jpg" width="300px" height="350px">
+        </figure>
+        <figure>
+            <img src="Supernatural_Season_7.jpg" alt="Supernatural_Season_7.jpg" class="Supernatural_Season_7.jpg" width="300px" height="350px">
+        </figure>
+        <figure>
+            <img src="the-sandman-dream.webp" alt="the-sandman-dream.webp" class="the-sandman-dream.webp" width="300px" height="350px">
+        </figure>
+        <figure>
+            <img src="Arrow.jpg" alt="Arrow.jpg" class="Arrow.jpg" width="300px" height="350px">
+        </figure>
+    </article>
+</section>
+
+            <!-- Add more figures for additional movies as needed -->
         </article>
     </section>
 </body>
