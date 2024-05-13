@@ -18,12 +18,19 @@
         background-color: #333;
         overflow: hidden;
         display: flex;
-        justify-content: flex-start; /* Changed to flex-start */
+        justify-content: space-between;
         align-items: center;
         padding: 10px;
     }
 
     /* Styling for the links in the navigation bar */
+    nav ul {
+        list-style: none; /* Remove default list styling */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        display: flex; /* Make it flex container */
+    }
+
     nav a {
         color: white;
         text-decoration: none;
@@ -91,7 +98,7 @@
 <body>
 
 <nav>
-    <ul style="display: flex; justify-content: flex-start; align-items: center;">
+    <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="movies.html">Movies</a></li>
         <li><a href="TV Shows.html">TV Shows</a></li>
@@ -148,7 +155,7 @@
 <section id="movies-section">
     <h2>Popular Movies</h2>
    <article>
-        <figure>
+         <figure>
              <img src="dune ii.webp" alt="dune ii" class="movie-thumbnail" width="300px" height="350px">
         </figure>
         <figure>
