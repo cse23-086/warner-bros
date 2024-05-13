@@ -19,11 +19,6 @@
             object-fit: cover; /* Ensure video covers entire area */
         }
 
-        #Movies-section {
-            margin-top: 80px; /* Add space above the content */
-            padding: 20px; /* Add padding for spacing */
-        }
-
         #navigation {
             position: fixed; /* Fix navigation bar position */
             top: 0; /* Place at the top of the page */
@@ -71,7 +66,16 @@
             margin-left: 10px; /* Add margin */
         }
 
-        #Movies-section article {
+        .section {
+            margin-top: 120px; /* Add space above each section */
+            padding: 20px; /* Add padding for spacing */
+        }
+
+        .section h2 {
+            margin-bottom: 20px; /* Add margin below section title */
+        }
+
+        .section article {
             display: flex; /* Use flexbox layout */
             flex-wrap: wrap; /* Allow items to wrap to next line if needed */
             justify-content: space-around; /* Arrange items evenly horizontally */
@@ -115,53 +119,48 @@
         </div>
     </nav>
 
-    <section id="Movies-section">
+    <section id="Movies-section" class="section">
         <h2>Popular Movies</h2>
         <article>
             <figure>
-            <img src="dune ii.webp" alt="dune ii" class="movie-thumbnail" width="300px" height="350px">
-        </figure>
-        <figure>
-            <img src="children of corn.jpeg" alt="children of corn" class="movie-thumbnail" width="300px" height="350px">
-        </figure>
-        <figure>
-            <img src="the Batman1.jpg" alt="the Batman1" class="movie-thumbnail" width="300px" height="350px">
-        </figure>
-        <figure>
-            <img src="65.jpeg" alt="65.jpeg" class="65.jpeg" width="200px" height="250px">
-        </figure>
-        <figure>
-            <img src="joker.webp" alt="joker.webp" class="joker.webp" width="300px" height="350px">
-        </figure>
-        <!-- Add more figures for additional movies as needed -->
-    </article>
-</section>
+                <img src="dune ii.webp" alt="dune ii" class="movie-thumbnail" width="300px" height="350px">
+            </figure>
+            <figure>
+                <img src="children of corn.jpeg" alt="children of corn" class="movie-thumbnail" width="300px" height="350px">
+            </figure>
+            <figure>
+                <img src="the Batman1.jpg" alt="the Batman1" class="movie-thumbnail" width="300px" height="350px">
+            </figure>
+            <figure>
+                <img src="65.jpeg" alt="65.jpeg" class="65.jpeg" width="200px" height="250px">
+            </figure>
+            <figure>
+                <img src="joker.webp" alt="joker.webp" class="joker.webp" width="300px" height="350px">
+            </figure>
+        </article>
+    </section>
 
-<section id="TV Shows-section">
-    <h2>Popular TV Shows</h2>
-    <article>
-        <figure>
-            <img src="RIVERDALE 2.jpg" alt="RIVERDALE 2.jpg" class="RIVERDALE 2.jpg" width="300px" height="350px">
-        </figure>
-        <figure>
-            <img src="last of us.jpeg" alt="last of us.jpeg" class="last of us.jpeg" width="300px" height="350px">
-        </figure>
-        <figure>
-            <img src="Smallville.jpg" alt="Smallville.jpg" class="Smallville.jpg" width="300px" height="350px">
-        </figure>
-        <figure>
-            <img src="Supernatural_Season_7.jpg" alt="Supernatural_Season_7.jpg" class="Supernatural_Season_7.jpg" width="300px" height="350px">
-        </figure>
-        <figure>
-            <img src="the-sandman-dream.webp" alt="the-sandman-dream.webp" class="the-sandman-dream.webp" width="300px" height="350px">
-        </figure>
-        <figure>
-            <img src="Arrow.jpg" alt="Arrow.jpg" class="Arrow.jpg" width="300px" height="350px">
-        </figure>
-    </article>
-</section>
-
-            <!-- Add more figures for additional movies as needed -->
+    <section id="TV Shows-section" class="section">
+        <h2>Popular TV Shows</h2>
+        <article>
+            <figure>
+                <img src="RIVERDALE 2.jpg" alt="RIVERDALE 2.jpg" class="RIVERDALE 2.jpg" width="300px" height="350px">
+            </figure>
+            <figure>
+                <img src="last of us.jpeg" alt="last of us.jpeg" class="last of us.jpeg" width="300px" height="350px">
+            </figure>
+            <figure>
+                <img src="Smallville.jpg" alt="Smallville.jpg" class="Smallville.jpg" width="300px" height="350px">
+            </figure>
+            <figure>
+                <img src="Supernatural_Season_7.jpg" alt="Supernatural_Season_7.jpg" class="Supernatural_Season_7.jpg" width="300px" height="350px">
+            </figure>
+            <figure>
+                <img src="the-sandman-dream.webp" alt="the-sandman-dream.webp" class="the-sandman-dream.webp" width="300px" height="350px">
+            </figure>
+            <figure>
+                <img src="Arrow.jpg" alt="Arrow.jpg" class="Arrow.jpg" width="300px" height="350px">
+            </figure>
         </article>
     </section>
 </body>
