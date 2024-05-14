@@ -3,145 +3,145 @@
 <head>
     <title>Movies</title>
     <style>
-       
-      body {
-    background-color: #8B0000; /* Updated background color */
-    margin: 0;
-    color: white;
-}
+        body {
+            background-color: #8B0000; /* Red background color */
+            margin: 0;
+            color: white;
+        }
 
-/* Styling for the navigation bar */
-nav {
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
 
-/* Styling for the links in the navigation bar */
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 16px;
-}
+        /* Styling for the links in the navigation bar */
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
 
-nav a:hover {
-    background-color: #575757;
-}
+        nav a:hover {
+            background-color: #575757;
+        }
 
-/* Styling for the search form */
-#search-form {
-    margin: 0;
-}
+        /* Styling for the search form */
+        #search-form {
+            margin: 0;
+        }
 
-#search-form input {
-    padding: 6px;
-    margin-right: 10px;
-}
+        #search-form input {
+            padding: 6px;
+            margin-right: 10px;
+        }
 
-/* Container to hold search and authentication links */
-.nav-container {
-    display: flex;
-    align-items: center;
-}
+        /* Container to hold search and authentication links */
+        .nav-container {
+            display: flex;
+            align-items: center;
+        }
 
-/* Movie thumbnail styling */
-.movie-thumbnail {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    margin: 10px;
-}
+        /* Movie thumbnail styling */
+        .movie-thumbnail {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            margin: 10px;
+        }
 
-/* Media queries for responsive images */
-@media (max-width: 768px) {
-    .movie-thumbnail {
-        width: 150px;
-        height: 225px;
-    }
-}
+        /* Media queries for responsive images */
+        @media (max-width: 768px) {
+            .movie-thumbnail {
+                width: 150px;
+                height: 225px;
+            }
+        }
 
-/* Footer styling */
-footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
 
-footer a:hover {
-    text-decoration: underline;
-}
+        footer a:hover {
+            text-decoration: underline;
+        }
 
-/* Flexbox for horizontal arrangement */
-article {
-    display: flex;
-    overflow-x: hidden; 
-}
+        /* Flexbox for horizontal arrangement */
+        article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-figure {
-    margin-right: 10px; /* Adjust spacing between figures */
-}
+        figure {
+            margin: 10px;
+        }
 
-/* Feedback form styling */
-#feedback-form {
-    background-color: #8B0000; /* Red background color */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 20px auto; /* Center the form */
-}
+        /* Feedback form styling */
+        #feedback-form {
+            background-color: #8B0000; /* Red background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px auto; /* Center the form */
+        }
 
-#feedback-form h2 {
-    color: white;
-    margin-bottom: 20px;
-}
+        #feedback-form h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
 
-#feedback-form input[type="text"],
-#feedback-form input[type="email"],
-#feedback-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+        #feedback-form input[type="text"],
+        #feedback-form input[type="email"],
+        #feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-#feedback-form input[type="submit"] {
-    background-color: #333; /* Dark red button */
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
+        #feedback-form input[type="submit"] {
+            background-color: #333; /* Dark red button */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
 
-#feedback-form input[type="submit"]:hover {
-    background-color: #575757; /* Dark red button on hover */
-}
+        #feedback-form input[type="submit"]:hover {
+            background-color: #575757; /* Dark red button on hover */
+        }
     </style>
 </head>
 <body>
 
     <nav>
         <div>
-            <a href="index.html">Home</a>
+             <a href="index.html">Home</a>
         <a href="movies.html">Movies</a>
         <a href="TV Shows.html">TV Shows</a>
         <a href="games&apps.html">Games & Apps</a>
         <a href="collection.html">Collections</a>
         <a href="feedback.html">Feedback</a>
-          <a href="Cartoons.html">Cartoons</a>
+          <a href="Cartoons.html">Cartoons</a>   
         </div>
     
     <div class="nav-container">
@@ -150,51 +150,33 @@ figure {
             <input type="text" placeholder="Search...">
             <button type="submit">Search</button>
         </form>
+    </div>
 </nav>
-
-</section>
-<section id="TV Shows-section">
-    <h2>Popular TV Shows</h2>
+    
+<section id="Cartoons-section">
+    <h2>Popular Cartoons</h2>
     <article>
         <figure>
-            <img src="RIVERDALE 2.jpg" alt="RIVERDALE 2.jpg" class="RIVERDALE 2.jpg" width="300px" height="350px">
+            <img src="Johnny test.jpg" alt="Johnny test" width="200px" height="250px">
         </figure>
         <figure>
-            <img src="last of us.jpeg" alt="last of us.jpeg" class="last of us.jpeg" width="300px" height="350px">
+            <img src="Justice league.jpg" alt="Justice league" class="Justice league" width="200px" height="250px">
         </figure>
         <figure>
-            <img src="the sandman-dream-poster-header.avif" alt="sandman-dream-poster-header.avif" class="sandman-dream-poster-header.avif" width="300px" height="350px">
-        </figure> 
-         <figure>
-            <img src="swat.jpg" alt="swat.jpg" class="swat.jpg" width="300px" height="350px">
-        </figure> 
-         <figure>
-            <img src="the boys.jpg" alt="the boys.jpg" class="the boys.jpg" width="300px" height="350px">
-        </figure> 
-         <figure>
-            <img src="yio.jpg" alt="yio.jpg" class="yio.jpg" width="300px" height="350px">
-        </figure> 
-         <figure>
-            <img src="you.jpg" alt="you.jpg" class="you.jpg" width="300px" height="350px">
-        </figure> 
-         <figure>
-            <img src="mani.jpg" alt="mani.jpg" class="mani.jpg" width="300px" height="350px">
-        </figure> 
-        <figure>
-            <img src="house.jpg" alt="house.jpg" class="house.jpg" width="300px" height="350px">
-        </figure> 
-        <figure>
-            <img src="gotham.jpg" alt="gotham.jpg" class="gotham.jpg" width="300px" height="350px">
-        </figure> 
-        <figure>
-            <img src="dumshii.jpg" alt="dumshii.jpg" class="dumshii.jpg" width="300px" height="350px">
+            <img src="BEN 10.webp" alt="BEN 10" class="BEN 10" width="200px" height="250px">
         </figure>
-      <figure>
-            <img src="drugs.jpg" alt="drugs.jpg" class="drugs.jpg" width="300px" height="350px">
+        <figure>
+            <img src="T and J.jpg" alt="T and J" class="T and J" width="200px" height="250px">
         </figure>
-
-        <!-- Add more figures for additional movies as needed -->
+        <figure>
+            <img src="regular_show.jpg" alt="regular_show" class="regular_show" width="200px" height="250px">
+        </figure> 
+        <figure>
+            <img src="scooby-doo.jpg" alt="scooby-doo" class="scooby-doo" width="200px" height="250px">
+        </figure>
+        <!-- Add more figures for additional cartoons as needed -->
     </article>
 </section>
+
 </body>
 </html>
