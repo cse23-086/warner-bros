@@ -52,8 +52,12 @@
             height: 300px;
             object-fit: cover;
             margin: 10px;
+            transition: opacity 0.3s ease-in-out;
+             border: none;
         }
-
+    .movie-thumbnail:hover {
+        opacity: 0.7; /* Adjust the opacity level as desired */
+    }
         /* Media queries for responsive images */
         @media (max-width: 768px) {
             .movie-thumbnail {
