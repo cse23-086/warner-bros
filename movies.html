@@ -53,8 +53,16 @@ nav a:hover {
     height: 300px;
     object-fit: cover;
     margin: 10px;
+    transition: opacity 0.3s ease-in-out;
 }
+    .movie-thumbnail:hover {
+        opacity: 0.7; /* Adjust the opacity level as desired */
+    }
 
+    /* Optional: Add styling to remove the default image border */
+    .movie-thumbnail {
+        border: none;
+    }
 /* Media queries for responsive images */
 @media (max-width: 768px) {
     .movie-thumbnail {
