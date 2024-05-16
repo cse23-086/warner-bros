@@ -1,149 +1,146 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>cOLLECTIONS</title>
+    <title>Collections</title>
     <style>
-      body {
-        background-color: #8B0000;
-        margin: 0;
-        color: white;
-      }
-
-      /* Styling for the navigation bar */
-      nav {
-        background-color: #333;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-      }
-
-      /* Styling for the links in the navigation bar */
-      nav a {
-        color: white;
-        text-decoration: none;
-        padding: 14px 16px;
-      }
-
-      nav a:hover {
-        background-color: #575757;
-      }
-
-      /* Styling for the search form */
-      #search-form {
-        margin: 0;
-      }
-
-      #search-form input {
-        padding: 6px;
-        margin-right: 10px;
-      }
-
-      /* Container to hold search and authentication links */
-      .nav-container {
-        display: flex;
-        align-items: center;
-      }
-
-      /* Movie thumbnail styling */
-      .movie-thumbnail {
-        width: 200px;
-        height: 300px;
-        object-fit: cover;
-        transition: opacity 0.3s ease-in-out;
-        border: none;
-      }
-
-      .movie-thumbnail:hover {
-        opacity: 0.7; /* Adjust the opacity level as desired */
-      }
-
-      /* Grid layout for movies */
-      #movies-section {
-        padding: 20px;
-      }
-
-      article {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
-        justify-content: center;
-      }
-
-      figure {
-        margin: 0;
-      }
-
-      /* Media queries for responsive images */
-      @media (max-width: 768px) {
-        .movie-thumbnail {
-          width: 150px;
-          height: 225px;
+        body {
+            background-color: #8B0000;
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
         }
-      }
 
-      /* Footer styling */
-      footer {
-        background-color: #333;
-        padding: 20px;
-        text-align: center;
-        color: white;
-      }
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
 
-      footer a {
-        color: white;
-        text-decoration: none;
-        margin: 0 10px;
-      }
+        /* Styling for the links in the navigation bar */
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
 
-      footer a:hover {
-        text-decoration: underline;
-      }
+        nav a:hover {
+            background-color: #575757;
+        }
 
-      /* Feedback form styling */
-      #feedback-form {
-        background-color: #8B0000; /* Red background color */
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
-        margin: 20px auto; /* Center the form */
-      }
+        /* Styling for the search form */
+        #search-form {
+            margin: 0;
+        }
 
-      #feedback-form h2 {
-        color: white;
-        margin-bottom: 20px;
-      }
+        #search-form input {
+            padding: 6px;
+            margin-right: 10px;
+        }
 
-      #feedback-form input[type="text"],
-      #feedback-form input[type="email"],
-      #feedback-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
+        /* Container to hold search and authentication links */
+        .nav-container {
+            display: flex;
+            align-items: center;
+        }
 
-      #feedback-form input[type="submit"] {
-        background-color: #333; /* Dark red button */
-        color: white;
-        padding: 10px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        width: 100%;
-      }
+        /* Movie thumbnail styling */
+        .movie-thumbnail {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            transition: opacity 0.3s ease-in-out;
+            border: none;
+        }
 
-      #feedback-form input[type="submit"]:hover {
-        background-color: #575757; /* Dark red button on hover */
-      }
+        .movie-thumbnail:hover {
+            opacity: 0.7; /* Adjust the opacity level as desired */
+        }
+
+        /* Grid layout for movies */
+        article {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        /* Media queries for responsive images */
+        @media (max-width: 768px) {
+            .movie-thumbnail {
+                width: 150px;
+                height: 225px;
+            }
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Feedback form styling */
+        #feedback-form {
+            background-color: #8B0000; /* Red background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px auto; /* Center the form */
+        }
+
+        #feedback-form h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        #feedback-form input[type="text"],
+        #feedback-form input[type="email"],
+        #feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #feedback-form input[type="submit"] {
+            background-color: #333; /* Dark red button */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        #feedback-form input[type="submit"]:hover {
+            background-color: #575757; /* Dark red button on hover */
+        }
     </style>
 </head>
 <body>
 
- <nav>
+<nav>
     <div>
         <a href="index.html">Home</a>
         <a href="movies.html">Movies</a>
@@ -162,185 +159,189 @@
         </form>
     </div>
 </nav>
-  
-  <section id="COMEDY-section">
-    <h2>COMDEY</h2>
+
+<section id="COMEDY-section">
+    <h2>Comedy</h2>
     <article>
-      <figure>
-        <img src="25.jpg" alt="25.jpg" class="movie-thumbnail">
-      </figure>
-      <figure>
-        <img src="AURTHUR.jpg" alt="AURTHUR.jpg" class="movie-thumbnail">
-      </figure>
-      <figure>
-        <img src="BRIDES MAIDS.jpg" alt="BRIDES MAIDS.jpg" class="movie-thumbnail">
-      </figure>
-      <figure>
-        <img src="CARS.jpg" alt="CARS.jpg" class="movie-thumbnail">
-      </figure>
-      <figure>
-        <img src="COP COMEDY.jpg" alt="COP COMEDY.jpg" class="movie-thumbnail">
-      </figure>
-      <figure>
-        <img src="DUM ND MUMER.jpg" alt="DUM ND MUMER.jpg" class="movie-thumbnail">
-      </figure> 
-      <figure>
-        <img src="HALLPASS.jpg" alt="HALLPASS.jpg" class="movie-thumbnail">
-      </figure>    
-      <figure>
-        <img src="JISS.jpg" alt="JISS.jpg" class="movie-thumbnail">
-      </figure>    
-      <figure>
-        <img src="HANGOVER.jpg" alt="HANGOVER.jpg" class="movie-thumbnail">
-      </figure>  
-      <figure>
-        <img src="LITTLEMAN.jpg" alt="LITTLEMAN.jpg" class="movie-thumbnail">
-      </figure>  
-      <figure>
-        <img src="MILLERS.jpg" alt="MILLERS.jpg" class="movie-thumbnail">
-      </figure>  
+        <figure>
+            <img src="25.jpg" alt="25" class="movie-thumbnail">
+        </figure>
+        <figure>
+            <img src="AURTHUR.jpg" alt="Arthur" class="movie-thumbnail">
+        </figure>
+        <figure>
+            <img src="BRIDES MAIDS.jpg" alt="Bridesmaids" class="movie-thumbnail">
+        </figure>
+        <figure>
+            <img src="CARS.jpg" alt="Cars" class="movie-thumbnail">
+        </figure>
+        <figure>
+            <img src="COP COMEDY.jpg" alt="Cop Comedy" class="movie-thumbnail">
+        </figure>
+        <figure>
+            <img src="DUM ND MUMER.jpg" alt="Dumb and Dumber" class="movie-thumbnail">
+        </figure> 
+        <figure>
+            <img src="HALLPASS.jpg" alt="Hall Pass" class="movie-thumbnail">
+        </figure>    
+        <figure>
+            <img src="JISS.jpg" alt="Jiss" class="movie-thumbnail">
+        </figure>    
+        <figure>
+            <img src="HANGOVER.jpg" alt="The Hangover" class="movie-thumbnail">
+        </figure>  
+        <figure>
+            <img src="LITTLEMAN.jpg" alt="Little Man" class="movie-thumbnail">
+        </figure>  
+        <figure>
+            <img src="MILLERS.jpg" alt="The Millers" class="movie-thumbnail">
+        </figure>  
     </article>
-  </section> 
-     <section id="ACTION-section">
-    <h2>ACTION</h2>
+</section>
+
+<section id="ACTION-section">
+    <h2>Action</h2>
     <article>
-      <figure>
-        <img src="dune ii.webp" alt="dune ii" class="movie-thumbnail">
-      </figure>
-      <figure>
-        <img src="children of corn.jpeg" alt="children of corn" class="movie-thumbnail">
-      </figure>
-      <figure>
-        <img src="the Batman1.jpg" alt="the Batman1" class="movie-thumbnail">
-      </figure>
-      <figure>
-        <img src="king v godzi.jpg" alt="king v godzi" class="movie-thumbnail">
-      </figure>
-      <figure>
-        <img src="Oppenh.jpeg" alt="Oppenh" class="movie-thumbnail">
-      </figure>
-      <figure>
-        <img src="CENTURION.jpg" alt="CENTURION" class="movie-thumbnail">
-      </figure> 
-      <figure>
-        <img src="FURY.jpg" alt="FURY" class="movie-thumbnail">
-      </figure>    
-      <figure>
-        <img src="aRCHER.jpg" alt="aRCHER" class="movie-thumbnail">
-      </figure>    
-      <figure>
-        <img src="interstellar.jpg" alt="interstellar" class="movie-thumbnail">
-      </figure>  
-      <figure>
-        <img src="matrix.png" alt="matrix" class="movie-thumbnail">
-      </figure>  
-      <figure>
-        <img src="sisu.jpg" alt="sisu" class="movie-thumbnail">
-      </figure>  
-      <figure>
-        <img src="spiderman.webp" alt="spiderman" class="movie-thumbnail">
-      </figure>  
-      <figure>
-        <img src="SHAZAM.jpg" alt="SHAZAM" class="movie-thumbnail">
-      </figure> 
-      <figure>
-        <img src="BlueBeetle.jpg" alt="BlueBeetle" class="movie-thumbnail">
-      </figure> 
-         <figure>
-        <img src="J.LEAGUE.jpg" alt="J.LEAGUE.jpg" class="movie-thumbnail">
-      </figure> 
-         <figure>
-        <img src="Godfather.webp" alt="Godfather.webp" class="movie-thumbnail">
-      </figure> 
-         <figure>
-        <img src="JOLKER.jpg" alt="JOLKER.jpg" class="movie-thumbnail">
-      </figure> 
-         <figure>
-        <img src="skyscraper.jpg" alt="skyscraper.jpg" class="movie-thumbnail">
-      </figure>
+        <figure>
+            <img src="dune ii.webp" alt="Dune II" class="movie-thumbnail">
+        </figure>
+        <figure>
+            <img src="children of corn.jpeg" alt="Children of Corn" class="movie-thumbnail">
+        </figure>
+        <figure>
+            <img src="the Batman1.jpg" alt="The Batman" class="movie-thumbnail">
+        </figure>
+        <figure>
+            <img src="king v godzi.jpg" alt="King vs Godzilla" class="movie-thumbnail">
+        </figure>
+        <figure>
+            <img src="Oppenh.jpeg" alt="Oppenheimer" class="movie-thumbnail">
+        </figure>
+        <figure>
+            <img src="CENTURION.jpg" alt="Centurion" class="movie-thumbnail">
+        </figure> 
+        <figure>
+            <img src="FURY.jpg" alt="Fury" class="movie-thumbnail">
+        </figure>    
+        <figure>
+            <img src="aRCHER.jpg" alt="Archer" class="movie-thumbnail">
+        </figure>    
+        <figure>
+            <img src="interstellar.jpg" alt="Interstellar" class="movie-thumbnail">
+        </figure>  
+        <figure>
+            <img src="matrix.png" alt="The Matrix" class="movie-thumbnail">
+        </figure>  
+        <figure>
+            <img src="sisu.jpg" alt="Sisu" class="movie-thumbnail">
+        </figure>  
+        <figure>
+            <img src="spiderman.webp" alt="Spider-Man" class="movie-thumbnail">
+        </figure>  
+        <figure>
+            <img src="SHAZAM.jpg" alt="Shazam" class="movie-thumbnail">
+        </figure> 
+        <figure>
+            <img src="BlueBeetle.jpg" alt="Blue Beetle" class="movie-thumbnail">
+        </figure> 
+        <figure>
+            <img src="J.LEAGUE.jpg" alt="Justice League" class="movie-thumbnail">
+        </figure> 
+        <figure>
+            <img src="Godfather.webp" alt="The Godfather" class="movie-thumbnail">
+        </figure> 
+        <figure>
+            <img src="JOLKER.jpg" alt="Joker" class="movie-thumbnail">
+        </figure> 
+        <figure>
+            <img src="skyscraper.jpg" alt="Skyscraper" class="movie-thumbnail">
+        </figure>
     </article>
-  </section>
-    <section id="Cartoons-section">
+</section>
+
+<section id="CARTOONS-section">
     <h2>Popular Cartoons</h2>
     <article>
         <figure>
-            <img src="Johnny test.jpg" alt="Johnny test" class="movie-thumbnail">
+            <img src="Johnny test.jpg" alt="Johnny Test" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="Justice league.jpg" alt="Justice league" class="movie-thumbnail">
+            <img src="Justice league.jpg" alt="Justice League" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="BEN 10.webp" alt="BEN 10" class="movie-thumbnail">
+            <img src="BEN 10.webp" alt="Ben 10" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="T and J.jpg" alt="T and J" class="movie-thumbnail">
+            <img src="T and J.jpg" alt="Tom and Jerry" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="regular_show.jpg" alt="regular_show" class="movie-thumbnail">
+            <img src="regular_show.jpg" alt="Regular Show" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="scooby-doo.jpg" alt="scooby-doo" class="movie-thumbnail">
+            <img src="scooby-doo.jpg" alt="Scooby-Doo" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="Justice league.jpg" alt="Justice league" class="movie-thumbnail">
+            <img src="Justice league.jpg" alt="Justice League" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="DOPE Adventure tym.jpg" alt="DOPE Adventure tym" class="movie-thumbnail">
+            <img src="DOPE Adventure tym.jpg" alt="Adventure Time" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="Looney toons.jpg" alt="Looney toons" class="movie-thumbnail">
+            <img src="Looney toons.jpg" alt="Looney Tunes" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="how to traind.jpg" alt="how to traind" class="movie-thumbnail">
+            <img src="how to traind.jpg" alt="How to Train Your Dragon" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="popey.jpg" alt="popey" class="movie-thumbnail">
+            <img src="popey.jpg" alt="Popeye" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="powfu.png" alt="powfu" class="movie-thumbnail">
+            <img src="powfu.png" alt="Powfu" class="movie-thumbnail">
         </figure>
-    </article> 
-     </section> 
-     <section id="THRILLER-section">
-    <h2>Popular THRILLER</h2>
+    </article>
+</section>
+
+<section id="THRILLER-section">
+    <h2>Popular Thrillers</h2>
     <article>
         <figure>
-            <img src="AGAINST THE NIHT.jpg" alt="AGAINST THE NIHT.jpg" class="movie-thumbnail">
+            <img src="AGAINST THE NIHT.jpg" alt="Against the Night" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="AWAKR.jpg" alt="AWAKR.jpg" class="movie-thumbnail">
+            <img src="AWAKR.jpg" alt="Awake" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="DEADLY ALBUT.jpg" alt="DEADLY ALBUT.jpg" class="movie-thumbnail">
+            <img src="DEADLY ALBUT.jpg" alt="Deadly Alibi" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="HES OUT THERE.jpg" alt="HES OUT THERE.jpg" class="movie-thumbnail">
+            <img src="HES OUT THERE.jpg" alt="He's Out There" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="LAW ABIDING CITIZEN.jpg" alt="LAW ABIDING CITIZEN.jpg" class="movie-thumbnail">
+            <img src="LAW ABIDING CITIZEN.jpg" alt="Law Abiding Citizen" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="KNIFR.jpg" alt="KNIFR.jpg" class="movie-thumbnail">
+            <img src="KNIFR.jpg" alt="Knife" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="LOOPER.jpg" alt="LOOPER.jpg" class="movie-thumbnail">
+            <img src="LOOPER.jpg" alt="Looper" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="NEST.jpg" alt="NEST.jpg" class="movie-thumbnail">
+            <img src="NEST.jpg" alt="The Nest" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="SCREAM.jpg" alt="SCREAM.jpg" class="movie-thumbnail">
+            <img src="SCREAM.jpg" alt="Scream" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="THE GOOD NEIGHBOR.jpg" alt="THE GOOD NEIGHBOR.jpg" class="movie-thumbnail">
+            <img src="THE GOOD NEIGHBOR.jpg" alt="The Good Neighbor" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="SUTH.jpg" alt="SUTH.jpg" class="movie-thumbnail">
+            <img src="SUTH.jpg" alt="Suth" class="movie-thumbnail">
         </figure>
         <figure>
-            <img src="US.jpg" alt="US.jpg" class="movie-thumbnail">
+            <img src="US.jpg" alt="Us" class="movie-thumbnail">
         </figure>
-    </article> 
-     </section>
+    </article>
+</section>
+
 </body>
 </html>
