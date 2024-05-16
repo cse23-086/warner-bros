@@ -1,76 +1,117 @@
- .movie-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Place behind other content */
-            object-fit: cover; /* Ensure video covers entire area */
-        }
+/* General Styles */
+body {
+    background-color: #8B0000; /* Red background color */
+    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+}
 
-        #navigation {
-            position: fixed; /* Fix navigation bar position */
-            top: 0; /* Place at the top of the page */
-            left: 0;
-            width: 100%;
-            z-index: 1000; /* Ensure navigation bar is above other content */
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            padding: 10px 20px; /* Add padding */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
-        }
+/* Styling for the navigation bar */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
-        nav {
-            display: flex; /* Use flexbox layout */
-            justify-content: space-between; /* Space items evenly horizontally */
-            align-items: center; /* Align items vertically */
-            width: 100%;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
 
-        nav a {
-            color: white; /* Text color for navigation links */
-            text-decoration: none; /* Remove underline from links */
-            margin: 0 10px; /* Add margin between links */
-        }
+nav a:hover {
+    background-color: #575757;
+}
 
-        nav form {
-            display: flex; /* Use flexbox layout */
-        }
+/* Styling for the search form */
+#search-form {
+    margin: 0;
+}
 
-        nav input[type="text"] {
-            padding: 5px; /* Add padding */
-            margin-right: 5px; /* Add margin */
-        }
+#search-form input {
+    padding: 6px;
+    margin-right: 10px;
+}
 
-        nav button {
-            padding: 5px 10px; /* Add padding */
-            background-color: #555; /* Background color for the button */
-            color: white; /* Text color for the button */
-            border: none; /* Remove border */
-            cursor: pointer; /* Change cursor to pointer */
-        }
+#search-form button {
+    padding: 6px 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
-        .login-signup a {
-            color: white; /* Text color for login/signup links */
-            text-decoration: none; /* Remove underline from links */
-            margin-left: 10px; /* Add margin */
-        }
+#search-form button:hover {
+    background-color: #444;
+}
 
-        .section {
-            margin-top: 120px; /* Add space above each section */
-            padding: 20px; /* Add padding for spacing */
-        }
+/* Container to hold search and authentication links */
+.nav-container {
+    display: flex;
+    align-items: center;
+}
 
-        .section h2 {
-            margin-bottom: 20px; /* Add margin below section title */
-        }
+/* Movie thumbnail styling */
+.movie-thumbnail {
+    width: 100%;
+    height: 250px; /* Adjusted for uniformity */
+    object-fit: cover;
+    margin: 10px;
+    transition: opacity 0.3s ease-in-out;
+    border: none;
+}
 
-        .section article {
-            display: flex; /* Use flexbox layout */
-            flex-wrap: wrap; /* Allow items to wrap to next line if needed */
-            justify-content: space-around; /* Arrange items evenly horizontally */
-        }
+.movie-thumbnail:hover {
+    opacity: 0.7; /* Adjust the opacity level as desired */
+}
 
-        .movie-thumbnail {
-            max-width: 200px; /* Adjust maximum width of each movie thumbnail */
-            margin-bottom: 20px; /* Add margin below each movie thumbnail */
-        }
+/* Grid styling for sections */
+section {
+    margin-top: 60px; /* Offset for fixed navbar */
+    padding: 20px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Optional: Add styling to remove the default image border */
+.movie-thumbnail {
+    border: none;
+}
+
+/* Media queries for responsive images */
+@media (max-width: 768px) {
+    .movie-thumbnail {
+        width: 150px;
+        height: 225px;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
