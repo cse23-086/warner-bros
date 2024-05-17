@@ -6,21 +6,22 @@
     <title>Home - Movie Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<header>
     <!-- Include the navigation -->
-    <div id="nav-placeholder"></div>
- <video class="movie-background" autoplay muted loop>
-        <source src="Paramount Pictures Logo (2020) [4K " type="video/mp4"> 
-         <source src="The Batman - 30 Second TV Spot (Fa" type="video/mp4">
+    <nav id="nav-placeholder"></nav>
+</header>
+<main>
+    <video class="movie-background" autoplay muted loop>
+        <source src="Paramount Pictures Logo (2020) [4K" type="video/mp4"> 
+        <source src="The Batman - 30 Second TV Spot (Fa" type="video/mp4">
         <source src="THE BATMAN – Main Trailer.mp4" type="video/mp4"> 
         <source src="BLACK ADAM.mp4" type="video/mp4"> 
-         <source src="MAN OF STEEL.mp4" type="video/mp4"> 
+        <source src="MAN OF STEEL.mp4" type="video/mp4"> 
         
         Your browser does not support the video tag.
     </video>
 
-
-   <section id="Movies-section" class="section">
+    <section id="Movies-section" class="section">
         <h2>Popular Movies</h2>
         <article>
             <figure>
@@ -64,20 +65,21 @@
             </figure>
         </article>
     </section>
-    
+
+
     <footer>
         <p>&copy; 2024 Movie Site</p>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
     </footer>
+</main>
 
-    <script>
-        // Load the navigation bar
-        fetch('nav.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            });
-    </script>
-</body>
-</html>
+<script>
+    // Load the navigation bar
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
