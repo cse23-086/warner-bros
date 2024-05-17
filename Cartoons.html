@@ -1,102 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Movies</title>
-    <style>
-        body {
-            background-color: #8B0000; /* Red background color */
-            margin: 0;
-            color: white;
-        }
-
-        /* Styling for the navigation bar */
-        nav {
-            background-color: #333;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-
-        /* Styling for the links in the navigation bar */
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 16px;
-        }
-
-        nav a:hover {
-            background-color: #575757;
-        }
-
-        /* Styling for the search form */
-        #search-form {
-            margin: 0;
-        }
-
-        #search-form input {
-            padding: 6px;
-            margin-right: 10px;
-        }
-
-        /* Container to hold search and authentication links */
-        .nav-container {
-            display: flex;
-            align-items: center;
-        }
-
-        /* Movie thumbnail styling */
-        .movie-thumbnail {
-            width: 100%; /* Set image width to 100% of its container */
-            height: 250px; /* Set a fixed height for all images */
-            object-fit: cover; /* Cover the entire container */
-            margin: 10px;
-        }
-
-        /* Grid styling for the article */
-        article {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid with columns of at least 200px width */
-            grid-gap: 10px; /* Gap between grid items */
-            padding: 10px; /* Padding for the grid container */
-            justify-items: center; /* Center grid items horizontally */
-        }
-   .movie-thumbnail {
-        transition: opacity 0.3s ease-in-out;
-    }
-
-    .movie-thumbnail:hover {
-        opacity: 0.7; /* Adjust the opacity level as desired */
-    }
-
-    /* Optional: Add styling to remove the default image border */
-    .movie-thumbnail {
-        border: none;
-    }
-       </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoons</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="movies.html">Movies</a>
-        <a href="TV Shows.html">TV Shows</a>
-        <a href="games&apps.html">Games & Apps</a>
-        <a href="collection.html">Collections</a>
-        <a href="feedback.html">Feedback</a>
-        <a href="Cartoons.html">Cartoons</a>
-    </div>
-
-    <div class="nav-container">
-        <!-- Search bar -->
-        <form id="search-form">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </form>
-    </div>
-</nav>
+    <!-- Include the navigation -->
+    <div id="nav-placeholder"></div>
 
 <section id="Cartoons-section">
     <h2>Popular Cartoons</h2>
@@ -140,5 +52,20 @@
     </article>
 </section>
 
+
+    <footer>
+        <p>&copy; 2024 Movie Site</p>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+    </footer>
+
+    <script>
+        // Load the navigation bar
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
