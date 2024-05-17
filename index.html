@@ -6,80 +6,81 @@
     <title>Home - Movie Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <!-- Include the navigation -->
-    <nav id="nav-placeholder"></nav>
-</header>
-<main>
-    <video class="movie-background" autoplay muted loop>
-        <source src="Paramount Pictures Logo (2020) [4K" type="video/mp4"> 
-        <source src="The Batman - 30 Second TV Spot (Fa" type="video/mp4">
-        <source src="THE BATMAN – Main Trailer.mp4" type="video/mp4"> 
-        <source src="BLACK ADAM.mp4" type="video/mp4"> 
-        <source src="MAN OF STEEL.mp4" type="video/mp4"> 
-        
-        Your browser does not support the video tag.
-    </video>
+<body>
+    <header>
+        <!-- Include the navigation -->
+        <nav id="nav-placeholder"></nav>
+    </header>
+    <main>
+        <video class="movie-background" autoplay muted loop>
+            <source src="Paramount Pictures Logo (2020) [4K.mp4" type="video/mp4">
+            <source src="The Batman - 30 Second TV Spot (Fa.mp4" type="video/mp4">
+            <source src="THE BATMAN – Main Trailer.mp4" type="video/mp4">
+            <source src="BLACK ADAM.mp4" type="video/mp4">
+            <source src="MAN OF STEEL.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-    <section id="Movies-section" class="section">
-        <h2>Popular Movies</h2>
-        <article>
-            <figure>
-                <img src="dune ii.webp" alt="dune ii" class="movie-thumbnail" width="300px" height="350px">
-            </figure>
-            <figure>
-                <img src="children of corn.jpeg" alt="children of corn" class="movie-thumbnail" width="300px" height="350px">
-            </figure>
-            <figure>
-                <img src="the Batman1.jpg" alt="the Batman1" class="movie-thumbnail" width="300px" height="350px">
-            </figure>
-            <figure>
-                <img src="65.jpeg" alt="65.jpeg" class="movie-thumbnail" width="200px" height="250px">
-            </figure>
-            <figure>
-                <img src="joker.webp" alt="joker.webp" class="movie-thumbnail" width="300px" height="350px">
-            </figure>
-        </article>
-    </section>
+        <section id="Movies-section" class="section">
+            <h2>Popular Movies</h2>
+            <div class="grid-container">
+                <figure class="image-item">
+                    <img src="dune ii.webp" alt="Dune II" class="movie-thumbnail">
+                </figure>
+                <figure class="image-item">
+                    <img src="children of corn.jpeg" alt="Children of the Corn" class="movie-thumbnail">
+                </figure>
+                <figure class="image-item">
+                    <img src="the Batman1.jpg" alt="The Batman" class="movie-thumbnail">
+                </figure>
+                <figure class="image-item">
+                    <img src="65.jpeg" alt="65" class="movie-thumbnail">
+                </figure>
+                <figure class="image-item">
+                    <img src="joker.webp" alt="Joker" class="movie-thumbnail">
+                </figure>
+            </div>
+        </section>
 
-    <section id="TV Shows-section" class="section">
-        <h2>Popular TV Shows</h2>
-        <article>
-            <figure>
-                <img src="RIVERDALE 2.jpg" alt="RIVERDALE 2.jpg" class="movie-thumbnail" width="300px" height="350px">
-            </figure>
-            <figure>
-                <img src="last of us.jpeg" alt="last of us.jpeg" class="movie-thumbnail" width="300px" height="350px">
-            </figure>
-            <figure>
-                <img src="Smallville.jpg" alt="Smallville.jpg" class="movie-thumbnail" width="300px" height="350px">
-            </figure>
-            <figure>
-                <img src="Supernatural_Season_7.jpg" alt="Supernatural_Season_7.jpg" class="movie-thumbnail" width="300px" height="350px">
-            </figure>
-            <figure>
-                <img src="the-sandman-dream.webp" alt="the-sandman-dream.webp" class="movie-thumbnail" width="300px" height="350px">
-            </figure>
-            <figure>
-                <img src="Arrow.jpg" alt="Arrow.jpg" class="movie-thumbnail" width="300px" height="350px">
-            </figure>
-        </article>
-    </section>
+        <section id="TV Shows-section" class="section">
+            <h2>Popular TV Shows</h2>
+            <div class="grid-container">
+                <figure class="image-item">
+                    <img src="RIVERDALE 2.jpg" alt="Riverdale" class="movie-thumbnail">
+                </figure>
+                <figure class="image-item">
+                    <img src="last of us.jpeg" alt="The Last of Us" class="movie-thumbnail">
+                </figure>
+                <figure class="image-item">
+                    <img src="Smallville.jpg" alt="Smallville" class="movie-thumbnail">
+                </figure>
+                <figure class="image-item">
+                    <img src="Supernatural_Season_7.jpg" alt="Supernatural Season 7" class="movie-thumbnail">
+                </figure>
+                <figure class="image-item">
+                    <img src="the-sandman-dream.webp" alt="The Sandman" class="movie-thumbnail">
+                </figure>
+                <figure class="image-item">
+                    <img src="Arrow.jpg" alt="Arrow" class="movie-thumbnail">
+                </figure>
+            </div>
+        </section>
 
+        <footer>
+            <p>&copy; 2024 Movie Site</p>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </footer>
+    </main>
 
-    <footer>
-        <p>&copy; 2024 Movie Site</p>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-    </footer>
-</main>
-
-<script>
-    // Load the navigation bar
-    fetch('nav.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading navigation:', error));
-</script>
+    <script>
+        // Load the navigation bar
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navigation:', error));
+    </script>
+</body>
+</html>
