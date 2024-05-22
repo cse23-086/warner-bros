@@ -1,133 +1,174 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Carousel</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Movies</title>
     <style>
-        .movie-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Place behind other content */
-            object-fit: cover; /* Ensure video covers entire area */
-        }
+      body {
+        background-color: #8B0000;
+        margin: 0;
+        color: white;
+      }
 
-        #navigation {
-            position: fixed; /* Fix navigation bar position */
-            top: 0; /* Place at the top of the page */
-            left: 0;
-            width: 100%;
-            z-index: 1000; /* Ensure navigation bar is above other content */
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            padding: 10px 20px; /* Add padding */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
-        }
+      /* Styling for the navigation bar */
+      nav {
+        background-color: #333;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
 
-        nav {
-            display: flex; /* Use flexbox layout */
-            justify-content: space-between; /* Space items evenly horizontally */
-            align-items: center; /* Align items vertically */
-            width: 100%;
-        }
+      /* Styling for the links in the navigation bar */
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+      }
 
-        nav a {
-            color: white; /* Text color for navigation links */
-            text-decoration: none; /* Remove underline from links */
-            margin: 0 10px; /* Add margin between links */
-        }
+      nav a:hover {
+        background-color: #575757;
+      }
 
-        nav form {
-            display: flex; /* Use flexbox layout */
-        }
+      /* Styling for the search form */
+      #search-form {
+        margin: 0;
+      }
 
-        nav input[type="text"] {
-            padding: 5px; /* Add padding */
-            margin-right: 5px; /* Add margin */
-        }
+      #search-form input {
+        padding: 6px;
+        margin-right: 10px;
+      }
 
-        nav button {
-            padding: 5px 10px; /* Add padding */
-            background-color: #555; /* Background color for the button */
-            color: white; /* Text color for the button */
-            border: none; /* Remove border */
-            cursor: pointer; /* Change cursor to pointer */
-        }
+      /* Container to hold search and authentication links */
+      .nav-container {
+        display: flex;
+        align-items: center;
+      }
 
-        .login-signup a {
-            color: white; /* Text color for login/signup links */
-            text-decoration: none; /* Remove underline from links */
-            margin-left: 10px; /* Add margin */
-        }
+      /* Movie thumbnail styling */
+      .movie-thumbnail {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        transition: opacity 0.3s ease-in-out;
+        border: none;
+      }
 
-        .section {
-            margin-top: 120px; /* Add space above each section */
-            padding: 20px; /* Add padding for spacing */
-        }
+      .movie-thumbnail:hover {
+        opacity: 0.7; /* Adjust the opacity level as desired */
+      }
 
-        .section h2 {
-            margin-bottom: 20px; /* Add margin below section title */
-        }
+      /* Grid layout for movies */
+      #movies-section {
+        padding: 20px;
+      }
 
-        .section article {
-            display: flex; /* Use flexbox layout */
-            flex-wrap: wrap; /* Allow items to wrap to next line if needed */
-            justify-content: space-around; /* Arrange items evenly horizontally */
-        }
+      article {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        justify-content: center;
+      }
 
+      figure {
+        margin: 0;
+      }
+
+      /* Media queries for responsive images */
+      @media (max-width: 768px) {
         .movie-thumbnail {
-            max-width: 200px; /* Adjust maximum width of each movie thumbnail */
-            margin-bottom: 20px; /* Add margin below each movie thumbnail */
-            transition: opacity 0.3s ease-in-out;
-            border: none;
+          width: 150px;
+          height: 225px;
         }
+      }
 
-        .movie-thumbnail:hover {
-            opacity: 0.7; /* Adjust the opacity level as desired */
-        }
+      /* Footer styling */
+      footer {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
 
+      footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Feedback form styling */
+      #feedback-form {
+        background-color: #8B0000; /* Red background color */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 20px auto; /* Center the form */
+      }
+
+      #feedback-form h2 {
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      #feedback-form input[type="text"],
+      #feedback-form input[type="email"],
+      #feedback-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      #feedback-form input[type="submit"] {
+        background-color: #333; /* Dark red button */
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      #feedback-form input[type="submit"]:hover {
+        background-color: #575757; /* Dark red button on hover */
+      }
     </style>
 </head>
 <body>
-  <video class="movie-background" autoplay muted loop controls>
-    <source src="Paramount Pictures Logo (2020) [4K].mp4" type="video/mp4">
-    <source src="The Batman - 30 Second TV Spot (Fa).mp4" type="video/mp4">
-    <source src="THE BATMAN – Main Trailer.mp4" type="video/mp4">
+  <!-- Background Video -->
+  <video class="movie-background" autoplay muted loop>
+    <source src="your-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
-</video>
+  </video>
 
-
-    <nav id="navigation">
-         <div>
-            <a href="index.html">Home</a>
+  <nav>
+    <div>
+           <a href="index.html">Home</a>
             <a href="movies.html">Movies</a>
             <a href="TV Shows.html">TV Shows</a>
             <a href="collection.html">Collections</a>
             <a href="feedback.html">Feedback</a>
             <a href="Cartoons.html">Cartoons</a> 
-             <a href="Games and Apps.html">Games and Apps</a>
-        </div>
+             <a href="Games and Apps.html">Games and Apps</a> 
+    </div>
 
-        <!-- Search bar -->
-        <form id="search-form">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </form>
-
-        <!-- Login and Sign up -->
-        <div class="Log In-signup">
-            <a href="Log In.html">Log In</a>
-            <a href="signup.html">Sign Up</a>
-        </div>
-    </nav>
-
+    <div class="nav-container">
+      <!-- Search bar -->
+      <form id="search-form">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+ 
     <section id="Movies-section" class="section">
         <h2>Popular Movies</h2>
         <article>
