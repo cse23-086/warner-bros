@@ -6,53 +6,118 @@
     <title>Collections - My Movie Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+   <style>
+        body {
+            background-color: #8B0000;
+            margin: 0;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+        nav ul a:hover {
+            background-color: #600000;
+        }
+        .thumbnail {
+            width: 150px;
+            height: auto;
+        }
+        figure {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
     <header>
-        <h1>Collections</h1>
+        <h1>Action Movies</h1>
         <nav>
             <ul>
-                 <a href="index.html">Home</a>
-            <a href="movies.html">Movies</a>
-            <a href="TV Shows.html">TV Shows</a>
-            <a href="games&apps.html">Games & Apps</a>
-            <a href="collection.html">Collections</a>
-            <a href="feedback.html">Feedback</a>
-            <a href="Cartoons.html">Cartoons</a> 
-             <a href="Games and Apps.html">Games and Apps</a>
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="TV Shows.html">TV Shows</a>
+                <a href="games&apps.html">Games & Apps</a>
+                <a href="collection.html">Collections</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="Cartoons.html">Cartoons</a>
+                <a href="Games and Apps.html">Games and Apps</a>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="collections">
-            <h2>Categories</h2>
-            <div class="collection-category" id="movies">
-                <h3>Movies</h3>
-                <ul>
-                    <li><a href="action-movies.html">Action</a></li>
-                    <li><a href="comedy-movies.html">Comedy</a></li>
-                    <li><a href="drama-movies.html">Drama</a></li>
-                    <!-- Add more categories as needed -->
-                </ul>
-            </div>
-            <div class="collection-category" id="tv-shows">
-                <h3>TV Shows</h3>
-                <ul>
-                    <li><a href="drama-tvshows.html">Drama</a></li>
-                    <li><a href="comedy-tvshows.html">Comedy</a></li>
-                    <li><a href="documentary-tvshows.html">Documentary</a></li>
-                    <!-- Add more categories as needed -->
-                </ul>
-            </div>
-            <div class="collection-category" id="cartoons">
-                <h3>Cartoons</h3>
-                <ul>
-                    <li><a href="classic-cartoons.html">Classic</a></li>
-                    <li><a href="modern-cartoons.html">Modern</a></li>
-                    <li><a href="anime-cartoons.html">Anime</a></li>
-                    <!-- Add more categories as needed -->
-                </ul>
-            </div>
+        <section id="action-movies">
+            <h2>Action Movies Collection</h2>
+            <article>
+                <figure>
+                    <img src="AGAINST THE NIHT.jpg" alt="AGAINST THE NIHT.jpg" class="thumbnail">
+                    <figcaption>AGAINST THE NIHT.jpg</figcaption>
+                </figure>
+                <figure>
+                    <img src="BlueBeetle.jpg" alt="BlueBeetle.jpg" class="thumbnail">
+                    <figcaption>BlueBeetle.jpg</figcaption>
+                </figure> 
+                <figure>
+                    <img src="CENTURION.jpg" alt="CENTURION.jpg" class="thumbnail">
+                    <figcaption>CENTURION.jpg</figcaption>
+                </figure> 
+                <figure>
+                    <img src="DARK.jpg" alt="DARK.jpg" class="thumbnail">
+                    <figcaption>DARK.jpg</figcaption>
+                </figure>
+                
+            </article>
+        </section> 
+         <section id="drama-tvshows">
+            <h2>Drama TV Shows Collection</h2>
+            <article>
+                <figure>
+                    <img src="dumshii.jpg" alt="dumshii.jpg" class="thumbnail">
+                    <figcaption>wizards </figcaption>
+                </figure>
+                <figure>
+                    <img src="swat.jpg" alt="swat.jpg" class="thumbnail">
+                    <figcaption>swat</figcaption>
+                </figure>
+                 <figure>
+                    <img src="you.jpg" alt="you.jpg" class="thumbnail">
+                    <figcaption>you</figcaption>
+                </figure> 
+                   <figure>
+                    <img src="drugs.jpg" alt="drugs.jpg" class="thumbnail">
+                    <figcaption>Narcos</figcaption>
+                </figure>
+            </article>
+        </section>  
+         <section id="comedy">
+            <h2>Comedy Collection</h2>
+            <article>
+                <figure>
+                    <img src="AURTHUR.jpg" alt="AURTHUR.jpg" class="thumbnail">
+                    <figcaption>AURTHUR</figcaption>
+                </figure>
+                <figure>
+                    <img src="BRIDES MAIDS.jpg" alt="BRIDES MAIDS.jpg" class="thumbnail">
+                    <figcaption>BRIDES MAIDS</figcaption>
+                </figure> 
+                <figure>
+                    <img src="COP COMEDY.jpg" alt="COP COMEDY.jpg" class="thumbnail">
+                    <figcaption>COP COMEDY</figcaption>
+                </figure> 
+               <figure>
+                    <img src="CARS.jpg" alt="CARS.jpg" class="thumbnail">
+                    <figcaption>CARS</figcaption>
+                </figure>
+                
+            </article>
         </section>
     </main>
 
