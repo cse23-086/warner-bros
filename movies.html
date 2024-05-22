@@ -2,13 +2,48 @@
 <html>
 <head>
     <title>Movies</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
       body {
         background-color: #8B0000;
         margin: 0;
         color: white;
+      }
+
+      /* Styling for the navigation bar */
+      nav {
+        background-color: #333;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      /* Styling for the links in the navigation bar */
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+      }
+
+      nav a:hover {
+        background-color: #575757;
+      }
+
+      /* Styling for the search form */
+      #search-form {
+        margin: 0;
+      }
+
+      #search-form input {
+        padding: 6px;
+        margin-right: 10px;
+      }
+
+      /* Container to hold search and authentication links */
+      .nav-container {
+        display: flex;
+        align-items: center;
       }
 
       /* Movie thumbnail styling */
@@ -107,45 +142,27 @@
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Movies</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="movies.html">Movies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="TV Shows.html">TV Shows</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="collection.html">Collections</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="feedback.html">Feedback</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Cartoons.html">Cartoons</a> 
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Games and Apps.html">Games and Apps</a> 
-          </li>
-        </ul>
-        <!-- Search bar -->
-        <form class="form-inline ml-auto" id="search-form">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
+
+  <nav>
+    <div>
+           <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="TV Shows.html">TV Shows</a>
+            <a href="collection.html">Collections</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="Cartoons.html">Cartoons</a> 
+             <a href="Games and Apps.html">Games and Apps</a> 
+    </div>
+
+    <div class="nav-container">
+      <!-- Search bar -->
+      <form id="search-form">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
     </div>
   </nav>
- 
+  
   <section id="movies-section">
     <h2>Popular Movies</h2>
     <article>
