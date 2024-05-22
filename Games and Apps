@@ -124,16 +124,17 @@
         <h2>Popular Games</h2>
         <article>
             <figure>
-                <img src="game1.jpg" alt="Game 1" class="thumbnail" width="300px" height="350px">
+                <img src="GHOST OF TSUSHIMA.jpg" alt="GHOST OF TSUSHIMA.jpg" class="thumbnail" width="300px" height="350px">
+            </figure>
+            
+            <figure>
+                <img src="NBA2K.jpg" alt="NBA2K.jpg" class="thumbnail" width="300px" height="350px">
             </figure>
             <figure>
-                <img src="game2.jpg" alt="Game 2" class="thumbnail" width="300px" height="350px">
+                <img src="PHONE MILES MORALES.jpg" alt="PHONE MILES MORALES.jpg" class="thumbnail" width="300px" height="350px">
             </figure>
-            <figure>
-                <img src="game3.jpg" alt="Game 3" class="thumbnail" width="300px" height="350px">
-            </figure>
-            <figure>
-                <img src="game4.jpg" alt="Game 4" class="thumbnail" width="300px" height="350px">
+             <figure>
+                <img src="grand theft.jpg" alt="grand theft.jpg" class="thumbnail" width="300px" height="350px">
             </figure>
         </article>
     </section>
@@ -141,13 +142,16 @@
     <section id="Apps-section" class="section">
         <h2>Popular Apps</h2>
         <article>
-            <figure>
-                <img src="app1.jpg" alt="App 1" class="thumbnail" width="300px" height="350px">
+           <figure>
+                <a href="https://www.crazygames.com/" target="_blank">
+                <img src="CRAZY GAMES.jpg" alt="CRAZY GAMES.jpg" class="thumbnail" width="300px" height="350px">
             </figure>
             <figure>
+                   <a href="https:https://ww1.goojara.to/mLRznj" target="_blank">
                 <img src="app2.jpg" alt="App 2" class="thumbnail" width="300px" height="350px">
             </figure>
             <figure>
+                  <a href="https:https://ww1.goojara.to/mLRznj" target="_blank">
                 <img src="app3.jpg" alt="App 3" class="thumbnail" width="300px" height="350px">
             </figure>
             <figure>
